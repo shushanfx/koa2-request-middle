@@ -43,7 +43,7 @@ You can use it in the filter/onBefore/onAfter function, and you can change the v
 
 ```javascript
 var options = {
-	comeFrom: "", // proxy id.
+	proxyID: "", // proxy id.
 	filter: "null | string | function", // the url that matched.
 	onBefore: "AsyncFunction|Function",  // do some thing before the fetch.
 	onAfter: "AsyncFunction|Function", // do some thing after the fetch.
