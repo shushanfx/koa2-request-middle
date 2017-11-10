@@ -1,0 +1,34 @@
+{
+  "name": "koa2-request-middle",
+  "version": "1.0.0",
+  "description": "A middle of koa for request url from remote website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shushanfx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shushanfx/koa2-request-middle.git"
+  },
+  "keywords": [
+    "request",
+    "koa2",
+    "middleware"
+  ],
+  "bugs": {
+    "url": "https://github.com/shushanfx/koa2-request-middle/issues"
+  },
+  "homepage": "https://github.com/shushanfx/koa2-request-middle#readme",
+  "dependencies": {
+    "iconv-lite": "^0.4.19",
+    "mime-types": "^2.1.17",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "koa": "^2.4.1",
+    "supertest": "^3.0.0"
+  }
+}
