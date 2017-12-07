@@ -1,6 +1,6 @@
 {
   "name": "koa2-request-middle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A middle of koa for request url from remote website.",
   "main": "index.js",
   "scripts": {

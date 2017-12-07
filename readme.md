@@ -30,10 +30,13 @@ app.listen(8001);
 **proxy object**, a proxy instance all through the middle ware procude, it cantains request information, such as :
 ```javascript
 {
+	protocol: "", // the request protocol
 	host: "", // the request host,
 	port: 80, // the request port,
 	path: "", // the request path,
-	query: "", // the request query
+	query: "", // the request query,
+	type: "", // the response body type
+	charset: "", // the response body charset.
 }
 ```
 You can use it in the filter/onBefore/onAfter function, and you can change the value to fix your solution.
@@ -43,11 +46,13 @@ You can use it in the filter/onBefore/onAfter function, and you can change the v
 
 ```javascript
 var options = {
-	proxyID: "", // proxy id.
+	proxyID: "", // proxy id. default "koa2-request-middle"
 	filter: "null | string | function", // the url that matched.
 	onBefore: "AsyncFunction|Function",  // do some thing before the fetch.
 	onAfter: "AsyncFunction|Function", // do some thing after the fetch.
 	useAgent: "String", // user agent.
+	cache: "true | false", // whether to use the cache of client.
+	ext: "string | Array<String> ", // the type of response body to call the onAfter function. default value is ["txt", "html", "xml", "js", "json"]
 }
 ```
 
