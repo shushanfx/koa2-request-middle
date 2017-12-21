@@ -42,6 +42,22 @@ app.listen(8001);
 You can use it in the filter/onBefore/onAfter function, and you can change the value to fix your solution.
 >
 > As you can see, the proxy object don't have the request body. Because i think it is not safe to read body content and in most case, there is not need to read it.
+     
+**protocol**         
+The protocol to use, default is null, you can change it as you wish. When null, use ctx.protocol.
+              
+**host**           
+The fetch host, comes from parameter `proxy-host` or ctx.hostname.
+            
+**port**         
+The fetch port, comes from parameter `proxy-port` or ctx.port.
+                     
+**path** 
+The fetch path, comes from parameter `proxy-path` or ctx.path. 
+
+**query**
+The query object of fetch object, comes from parameter `proxy-path` **and** ctx.query with an merge operation.
+
 
 
 ```javascript
